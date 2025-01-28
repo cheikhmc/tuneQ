@@ -1,0 +1,41 @@
+[project]
+name = "tuneq"
+version = "0.1.0"
+description = "A production-ready library for measurement-error mitigation and circuit optimization in NISQ computing."
+authors = [
+    {name = "Cheikh Mohamed Vadhel"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10,<4"
+
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.2"
+pytest-mock = "^3.14.0"
+mypy = "^1.14.1"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+
+
+[project.optional-dependencies]
+qiskit = ["qiskit"]
+cirq = ["cirq"]
+
+[tool.poetry.group.extras.dependencies]
+cirq = "^1.4.1"
+qiskit = "^1.3.2"
+
+
+
+[tool.poetry.dependencies]
+numpy = "1.26.4"
+cirq = {version = "^1.4.1", optional = true}
+qiskit = {version = "^1.3.2", optional = true}
+
