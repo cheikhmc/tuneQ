@@ -67,7 +67,7 @@ TuneQ supports **Python 3.10+**. You can install via **Poetry** or generate a `r
 1. **Clone** the repo:
 
    ```bash
-   git clone https://github.com/<your-username>/tuneq.git
+   git clone https://github.com/cheikhmc/tuneq.git
    cd tuneq
    ````
 2. **Install** with poetry:
